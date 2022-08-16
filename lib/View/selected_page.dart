@@ -16,12 +16,13 @@ var selectedSide = "x";
 class _SelectedSideState extends State<SelectedSide> {
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: SolidColors.primaryColor,
       body: Center(
         child: Padding(
-          padding: EdgeInsets.fromLTRB(MediaQuery.of(context).size.width / 14,
-              64, MediaQuery.of(context).size.width / 14, 64),
+          padding:
+              EdgeInsets.fromLTRB(size.width / 10, 64, size.width / 10, 64),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

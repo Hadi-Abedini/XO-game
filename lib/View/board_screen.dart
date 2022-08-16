@@ -65,20 +65,32 @@ class _BoardScreenState extends State<BoardScreen> {
                   borderRadius: BorderRadius.circular(20),
                   color: SolidColors.secondaryColor,
                 ),
-                child: const Padding(
-                  padding: EdgeInsets.all(16),
-                  child: Text(
-                    'شروع مجدد',
-                    style: TextStyle(
-                        fontFamily: 'vazir',
-                        fontSize: 23,
-                        fontWeight: FontWeight.w700,
-                        color: SolidColors.primaryColor),
+                child: Padding(
+                  padding: const EdgeInsets.all(5),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: SolidColors.primaryColor,
+                        width: 5,
+                      ),
+                      color: SolidColors.secondaryColor,
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.fromLTRB(32, 16, 32, 16),
+                      child: Text(
+                        'شروع مجدد',
+                        style: TextStyle(
+                            fontFamily: 'vazir',
+                            fontSize: 25,
+                            fontWeight: FontWeight.w700,
+                            color: SolidColors.primaryColor),
+                      ),
+                    ),
                   ),
                 ),
               ),
             ),
-            const SizedBox(height: 0),
           ],
         ),
       ),
